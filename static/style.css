@@ -1,0 +1,110 @@
+/* Скидання стилів */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Тіло */
+  body {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Заголовок */
+  header {
+    background-color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  header img {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+  }
+  
+  /* Навігація */
+  nav {
+    background-color: #f7f7f7;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  nav ul li a:hover {
+    color: #000;
+  }
+  
+  /* Вступ */
+  .intro {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .intro h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .intro p {
+    margin-bottom: 20px;
+  }
+  
+  .intro a {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  .intro a:hover {
+    background-color: #333;
+  }
+  
+  /* Інформація */
+  .info {
+    padding: 40px 20px;
+    background-color: #f7f7f7;
+  }
+  
+  .info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .info p {
+    margin-bottom: 10px;
+  }
+  
+  /* Підвал */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
