@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Readopolis</title>
+    <title>MUSEUM</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
@@ -18,36 +18,76 @@
 </head>
 <body>
     <header id="header" class="header">
-        <a href="index.html"></a>
-        <h1>Музей</h1>
+        <div class="container">
+            <div class="nav">
+                <h1 class="header_title">
+                    <a href="#">
+                        MUSEUM
+                    </a>
+                </h1>
+                <nav class="menu">
+                    <a href="shop.html" class="btn">
+                        Магазин
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="visit.html">
+                                Відвідати
+                            </a>
+                        <li></li>
+                            <a href="exhibitions.html">
+                                Виставки та події
+                            </a>
+                        </li>
+                        <li></li>
+                            <a href="collections.html">
+                                Колекція
+                            </a>
+                        </li>
+                        <li></li>
+                            <a href="membership.html">
+                                Членство
+                            </a>
+                        </li>
+                        <li></li>
+                            <a href="supportus.html">
+                                Підтримати нас
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="visit.html">Відвідати</a></li>
-            <li><a href="exhibitions.html">Виставки та події</a></li>
-            <li><a href="collection.html">Колекція</a></li>
-            <li><a href="membership.html">Членство</a></li>
-            <li><a href="support.html">Підтримати нас</a></li>
 
-            <li><a href="{% url 'museum:logout' %}">Вийти</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section class="intro">
-            <h2>Ласкаво просимо до музею</h2>
+    <section id="welcome" class="welcome">
+        <div class="container">
+            <h1>Ласкаво просимо до музею</h1>
             <p>Пізнай культури всього світу, від світанку людської історії до сьогодення</p>
-            <a href="visit.html">Спланувати візит</a>
-        </section>
-        <section class="info">
-            <h3>Досліди два мільйони років людської історії та культури</h3>
-            <p>Безкоштовний вхід</p>
-            <p>Зареєструватися онлайн</p>
-            <p>Відкритий сьогодні: 10:00-16:00</p>
-            <p>Останній вхід: 15:00</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Музей</p>
+            <a href="planvisit.html" class="btn2">
+                Спланувати візит
+            </a>
+        </div>
+    </section>
+
+    <section id="main" class="main">
+        <div class="container">
+            <div class="display">
+                <div class="text">
+                    <h1>Досліди два мільйони років людської історії та культури</h1>
+                    <div class="info">
+                        <p>Безкоштовний вхід - зареєструватися онлайн</p>
+                        <p>Відкритий сьогодні: 10:00 - 16:00</p>
+                        <p>Останній вхід: 15:00</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <span>Copyright © 2023 | BSFY</span>
+        </div>
     </footer>
-  </body>
+</body>
 </html>
