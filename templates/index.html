@@ -1,14 +1,15 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MUSEUM</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="{% static 'style.css' %}">
     <style>
         html {
@@ -54,23 +55,29 @@
                                 Підтримати нас
                             </a>
                         </li>
+                        <li></li>
+                            <a href="login.html">
+                                Вхід
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-
-    <section id="welcome" class="welcome">
-        <div class="container">
-            <h1>Ласкаво просимо до музею</h1>
-            <p>Пізнай культури всього світу, від світанку людської історії до сьогодення</p>
-            <a href="planvisit.html" class="btn2">
-                Спланувати візит
-            </a>
+    <section id="main" class="main">
+        <div class="background_image"></div>
+        <div id="info_box" class="info_box">
+            <h1 class="main_title">Ласкаво просимо до музею</h1>
+            <p>Пізнай культуру всього світу, від світанку людської історії до сьогодення.</p>
+            <h2>
+                <a href="visit.html" class="shop_btn">
+                    Спланувати візит
+                </a>
+            </h2>
         </div>
     </section>
-
-    <section id="main" class="main">
+    <!-- <section id="hero" class="hero">
         <div class="container">
             <div class="display">
                 <div class="text">
@@ -83,10 +90,16 @@
                 </div>
             </div>
     </section>
-
+    <section id="main" class="main">
+        <div class="container">
+            <hr>
+        </div>
+    </section> -->
     <footer id="footer" class="footer">
         <div class="container">
-            <span>Copyright © 2023 | BSFY</span>
+            <div class="container">
+                <span>Copyright © 2023 | BSFY</span>
+            </div>
         </div>
     </footer>
 </body>
