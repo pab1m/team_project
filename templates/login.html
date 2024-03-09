@@ -10,25 +10,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="{% static 'login.css' %}">
-
 </head>
 
 <body>
     <section>
-        <form> 
+        <form action="" method="POST">
+            {% csrf_token %}
             <h1>Вхід</h1>
             <div class="inputbox">
                 <ion-icon name="mail-outline"></ion-icon>
-                <input type="email" required>
+                <input type="text" name="username" required>
                 <label>Логін</label>
                 <!-- <span class="error-message" id="email-error"></span> -->
             </div>
 
             <div class="inputbox">
                 <ion-icon name="lock-closed-outline"></ion-icon>
-                <input id="passwordInput" type="password" required>
+                <input id="passwordInput" type="password" name="password" required>
                 <label>Пароль</label>
                 <i class="far fa-eye-slash eye-icon" id="togglePassword"></i>
             </div>

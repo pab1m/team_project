@@ -22,7 +22,7 @@
         <div class="container">
             <div class="nav">
                 <h1 class="header_title">
-                    <a href="#">
+                    <a href="">
                         MUSEUM
                     </a>
                 </h1>
@@ -35,31 +35,35 @@
                             <a href="visit.html">
                                 Відвідати
                             </a>
-                        <li></li>
+                        <li>
                             <a href="exhibitions.html">
                                 Виставки та події
                             </a>
                         </li>
-                        <li></li>
+                        <li>
                             <a href="collections.html">
                                 Колекція
                             </a>
                         </li>
-                        <li></li>
+                        <li>
                             <a href="membership.html">
                                 Членство
                             </a>
                         </li>
-                        <li></li>
+                        <li>
                             <a href="supportus.html">
                                 Підтримати нас
                             </a>
                         </li>
-                        <li></li>
-                            <a href="login.html">
-                                Вхід
-                            </a>
-                        </li>
+                        {% if user.is_authenticated %}
+                            <li>
+                                <p style="color: white">{{ request.user }}</p>
+                            </li>
+                        {% else %}
+                                <a href="{% url 'museum:login' %}">
+                                    Вхід
+                                </a>
+                        {% endif %}
                     </ul>
                 </nav>
             </div>

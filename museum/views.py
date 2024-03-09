@@ -1,4 +1,4 @@
-from django.contrib.auth import logout
+from django.contrib.auth import logout, authenticate, login
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.contrib import messages
@@ -29,13 +29,25 @@ def signup(request):
         return render(request, 'signup.html')
 
 
+def login_user(request):
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
+            login(request, user)
+            return redirect('museum:index')
+        else:
+            messages.error(request, "Дані введено некоректно")
+
+    return render(request, 'login.html')
+
+
 def logout_user(request):
     logout(request)
     return redirect('museum:index')
 
-
-def login(request):
-    return render(request,  'login.html')
 
 
 def password_forgotten(request):
